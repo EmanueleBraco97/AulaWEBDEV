@@ -1,0 +1,173 @@
+/*CSS GLOBAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*INIZIO CSS PER SINGOLA PAGINA*/
+
+/*NAVBAR*/
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 999;
+  background-color: darkorchid;
+}
+
+nav img {
+  width: 130px;
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: bisque;
+}
+
+nav ul li a:hover {
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+
+/*HERO SECTION*/
+.section-hero {
+  width: 100vw;
+  height: 800px;
+  background-image: url('https://www.basilicata24.it/photogallery_new/images/2015/11/19660-18897-19660.660x368.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section-hero h1 {
+    color: aquamarine;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/*STILE AI BUTTON CHE SI TROVANO DENTRO HERO, VARI HOVER E TRANSITION*/
+.section-hero .buttons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content:center;
+    gap: 50px;
+}
+
+.section-hero .buttons button {
+    width: 150px;
+    height: 50px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-contattaci button {
+    background-color: aquamarine;
+}
+
+.button-contattaci button:hover {
+    background-color: slateblue;
+    transition: 0.5s ease-in-out;
+}
+
+.button-info button {
+    background-color: slateblue;
+}
+
+.button-info button:hover {
+    background-color: aquamarine;
+    transition: 0.5s ease-in-out;
+}
+
+/*FOOTER*/
+footer {
+  background: gray;
+  width: 100vw;
+  color: #fff;
+  padding: 15px;
+}
+
+.footer-container {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.footer-container img {
+  width: 275px;
+  border-radius: 10px;
+}
+
+.utilities {
+  display: flex;
+}
+
+.utilities .links .title .utilities .policies .title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.utilities ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.utilities ul li:hover {
+    text-decoration: underline;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.links,
+.policies {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /*con la proprietà "gap" sto dando uno spazio tra le due colonne, lo sto usando per non usare i margin*/
+  gap: 10px;
+}
+
+/*BOTTOM FOOTER, DOVE C'E' LA SEZIONE EMAIL*/
+
+.bottom-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  padding: 20px;
+}
