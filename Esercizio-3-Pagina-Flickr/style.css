@@ -1,0 +1,245 @@
+/*CSS GLOBAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Secluded_Pete_Rowbottom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER E NAV DELLA PAGINA*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 999;
+}
+
+nav {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  backdrop-filter: blur(10px);
+}
+
+/*NAV LEFT-LOGO*/
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+nav .logo .logo-nav {
+  width: 50px;
+  fill: white;
+}
+
+nav .logo span {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*NAV CENTER-SEARCH BAR*/
+nav .search-bar input {
+    width: 800px;
+    height: 35px;
+    border-radius: 1px;
+    border-color: white;
+}
+
+nav .search-bar input[type="text"]::placeholder {
+  padding-left: 30px;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"%3E%3Cpath d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"%3E%3C/path%3E%3C/svg%3E');
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+
+/*NAV RIGHT- BUTTONS*/
+nav .buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 30px;
+}
+
+nav .buttons .button-accedi {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav .buttons .button-accedi {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav .buttons .button-registrati {
+    background-color: white;
+    color: black;
+    height: 35px;
+    width: 100px;
+    border-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+nav .buttons .button-registrati:hover {
+    color: gray;
+}
+
+/*INIZIO MAIN*/
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+main .container-main {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+main .txt {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+main .txt .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main .txt .paragrafo-main {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+main .txt button {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    height: 50px;
+    width: 230px;
+    border-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .txt button:hover {
+    color: gray;
+    transition: 0.5s ease-in-out;
+}
+
+/*MAIN BOTTOM*/
+main .container-main .txt-bottom-main {
+    text-align: center;
+}
+
+main .container-main .txt-bottom-main a {
+    text-decoration: none;
+    color: white;
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.6);
+    height: 50px;
+    display: flex;
+}
+
+/*FOOTER LIST LEFT - INFO*/
+footer .lists {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .lists .list-info ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    margin-left: 35px;
+}
+
+footer .lists .list-info ul li a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.italiano {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.italiano .icon {
+    fill: rgba(255, 255, 255, 0.6);
+    width: 15px;
+    cursor: pointer;
+}
+
+footer .lists .list-info ul li a:hover {
+    color: white;
+}
+
+/*FOOTER RIGHT - SOCIAL*/
+footer .lists .list-social {
+    display: flex;
+    color: white;
+}
+
+footer .lists .list-social ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 35px;
+    list-style: none;
+}
+
+footer .lists .list-social ul .social {
+    fill: rgba(255, 255, 255, 0.6);
+    width: 25px;
+}
+
+footer .lists .list-social ul .social:hover {
+    fill: white;
+    transition: 0.5s ease-in-out;
+}
