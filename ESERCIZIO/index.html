@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>ESERCIZIO - TEST</title>
+  </head>
+  <body>
+    <!--HEADER DELLA PAGINA-->
+    <header>
+      <nav>
+        <div class="logo">
+          <svg
+            class="icon-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V288H64V64H512z"
+            />
+          </svg>
+        </div>
+        <h1>TEST</h1>
+      </nav>
+    </header>
+
+    <!--MAIN DELLA PAGINA-->
+    <main>
+        <!--TITOLO DEL MAIN-->
+      <h1 class="title-main">DOMANDE E RISPOSTE</h1>
+
+      <!--INIZIO DEL FORM DOMANDE E RISPOSTE-->
+      <form class="faq">
+
+        <h2>1) Qual è la differenza tra i ruoli di <strong style="color: red">HTML, CSS e JavaScript</strong>?</h2>
+        <label for="risposta1">Risposta:</label>
+        <textarea id="risposta1" name="risposta">
+        HTML(HYPER TEXT MARKUP LANGUAGE): Linguaggio di MARKUP, permette di creare la struttura/scheletro di una pagina web.
+
+        CSS(CASCADING STYLES SHEET): Linguaggio di STILE, ci permette di associare dei colori, dei font e stilizzare le pagine HTML
+        
+        JAVASCRIPT: Linguaggio di programmazione(scripting) orientato agli eventi, utilizzato molto per lo sviluppo web, permette di rendere 
+        dinamiche le pagine create con html e css.
+        </textarea>
+        <hr>
+
+        <h2>2) Quali sono i <strong style="color: red;">tag HTML di base</strong>?</h2>
+        <label for="risposta2">Risposta:</label>
+        <textarea id="risposta2" name="risposta">
+                I Tag HTML di base sono: "<!DOCTYPE>", a seguire <html>, <head>, <meta>, <title>, <body>
+                poi altri tag base come <div>, <p>, <h1-h6> etc. /semantici come <header>, <nav>, <main>,
+                <section>, <footer>.                
+        </textarea>
+        <hr>
+
+        <h2>3) Quali sono i principali elementi <strong style="color: red;">JavaScript</strong> che conosci ad ora?</h2>
+        <label for="risposta3">Risposta:</label>
+        <textarea id="risposta3" name="risposta">
+            Principali elementi Javascript che conosco sono i vari tipi di variabili, array, un po' di dimestichezza con IF/ELSE e FOR, qualcosa 
+            inerente le Funzioni e qualche nozione sugli oggetti e sull'asincronia.
+        </textarea>
+        <hr>
+
+        <h2>4) Qual è la differenza tra una <strong style="color: red;">Tipizzazione Rigida</strong> e una <strong style="color: red;">Tipizzazione Debole</strong>?</h2>
+        <label for="risposta4">Risposta:</label>
+        <textarea id="risposta4" name="risposta">
+            Tipizzazione Rigida: ovvero sono quei linguaggi di programmazione che quando dichiariamo una variabile viene dichiarato esplicitamente
+            il tipo di dato.
+            Esempio: in JAVA quando diamo ad una variabile INT stiamo specificando il tipo di quella variabile, ovvero intero.
+
+            Tipizzazione Debole: a differenza, non prevede alcuna dichiarazione specifica di tipo per la variabile
+            Esempio: JAVASCRIPT(per avere una tipizzazione rigida in javascript dobbiamo ricorrere a TYPESCRIPT)</textarea>
+        </textarea>
+        <hr>
+
+        <h2>5) Qual è il punto di collegamento tra <strong style="color: red;">Backend</strong> e <strong style="color: red;">Frontend</strong> e come vi comunichiamo.?</h2>
+        <label for="risposta5">Risposta:</label>
+        <textarea id="risposta5" name="risposta">
+            Backend e frontend riescono a comunicare tramite API(Application programming interface)
+        </textarea>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

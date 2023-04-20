@@ -1,0 +1,79 @@
+/*CSS GLOBAL*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #b6aaaa, #e4c3c3);
+  font-family: 'Roboto', sans-serif;
+}
+
+/*CSS PER NAVBAR DELLA PAGINA*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px;
+  gap: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: aquamarine;
+  width: 100%;
+  height: 10%;
+}
+
+nav .logo .icon-logo {
+  fill: gray;
+  width: 50px;
+  cursor: pointer;
+}
+
+nav .logo .icon-logo:hover {
+  fill: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+/*CSS PER MAIN DELLA PAGINA*/
+main {
+  width: 100%;
+  height: 90%;
+  margin-top: 130px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+main .title-main {
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 130px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-left: 5px solid red;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
